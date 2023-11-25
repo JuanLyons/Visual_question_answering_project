@@ -23,24 +23,24 @@ pip install git+https://github.com/openai/CLIP.git
 
 ## Dataset
 
-The test dataset is in the next path in BCV002:
+The test image dataset is in the next path in BCV002:
 ```
 /home/nandradev/ProyectoAML/Metodo/ProyectoAML/test
 ```
-The other sets of the datasets are not requiered due to the code is made to do it by itself. It is possible to use the datasets HuggingFace library to load the dataset.
+The other sets of the datasets are not required due to the code is made to do it by itself. It loads the dataset directly with Huggingface, instead of having folders with it. 
 
-To acces to a image you have to use the following format "number.jpg" where the number correspond to the name of the image.
+To access an image you have to use the following format "number.jpg" where the number corresponds to the name of the image. Numbers in the test folder range from 0 to 3361.
 
 ## Model weigths
 
-The best model weigth are in the following path in BCV002:
+The best model (final method) weights are in the following path in BCV002:
 ```
 /home/nandradev/ProyectoAML/Metodo/ProyectoAML/CLIP_ViT-B32_concat_nl1_hd1024_BCELoss_w40.pth
 ```
 
 ## Training
 
-You can train the model from 0 using this command. You do not need to download the dataset external, the code is implemented to do it:
+You can train the model from 0 using this command. You do not need to download the dataset externally, the code is implemented to do it:
 ```
 python main.py --train True
 ```
@@ -52,10 +52,11 @@ For testing the model you have trained you can run the following command:
 python main.py --bestmethod True --mode "test"
 ```
 
-For testing the model with our weigths you run thw following command:
+For testing the model with our weights you run the following command:
 ```
 python main.py --bestmethod True --mode "test" --pretrained True
 ```
+Both should reproduce our final method results reported in the paper. 
 
 ## Demo
 
