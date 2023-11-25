@@ -18,7 +18,6 @@ To install clip follow the next instructions:
 
 ```
 conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=12.1 -c pytorch -c nvidia
-pip install ftfy regex tqdm
 pip install git+https://github.com/openai/CLIP.git
 ```
 
@@ -28,7 +27,9 @@ The test dataset is in the next path:
 ```
 /home/nandradev/ProyectoAML/Metodo/ProyectoAML/test
 ```
-To acces to the images you have to declare the image you have to use the following format "number.jpg".
+The other sets of the datasets are not requiered due to the code is made to do it by itself. It can be used the datasets huggingface library to load the dataset.
+
+To acces to a image you have to use the following format "number.jpg" where the number correspond to the name of the image.
 
 ## Model weigths
 
@@ -41,20 +42,25 @@ The best model weigth are in the following path:
 
 You can train the model from 0 using this command. You do not need to download the dataset external, the code is implemented to do it:
 ```
-CUDA_VISIBLE_DEVICES=0 python main.py --train True
+python main.py --train True
 ```
 
 ## Test
 
-For testing the model you can run the following command:
+For testing the model you have trained you can run the following command:
 ```
-CUDA_VISIBLE_DEVICES=0 python main.py --bestmethod True --mode "test"
+python main.py --bestmethod True --mode "test"
+```
+
+For testing the model with our weigths you run thw following command:
+```
+python main.py --bestmethod True --mode "test" --pretrained True
 ```
 
 ## Demo
 
 The demo could be tested by running this command:
 ```
-CUDA_VISIBLE_DEVICES=0 python main.py --mode 'demo' --img 'test/0.jpg'
+python main.py --mode 'demo' --img 'test/0.jpg'
 ```
-You can specify the image, by naming the set and the id of the image, and the demo will need you to input a question. Then the model is going to print a possible answer.
+You can specify the image, by naming the set and the id of the image, and the demo will need you to input a question. Then the model is going to print the predicted answer.
