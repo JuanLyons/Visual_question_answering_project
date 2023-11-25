@@ -72,6 +72,9 @@ Here are some examples for images and questions. For best results, we recommend 
 
 
 ### Image 1
+
+![Im1](images/9.jpg)
+
 ```
 python main.py --mode 'demo' --img '/home/nandradev/ProyectoAML/Metodo/ProyectoAML/test/9.jpg'
 ```
@@ -94,6 +97,8 @@ Output:
 ```
 
 ### Image 2
+
+![Im1](images/34.jpg)
 
 ```
 python main.py --mode 'demo' --img '/home/nandradev/ProyectoAML/Metodo/ProyectoAML/test/34.jpg'
