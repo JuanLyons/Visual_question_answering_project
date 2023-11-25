@@ -27,7 +27,7 @@ The test dataset is in the next path in BCV002:
 ```
 /home/nandradev/ProyectoAML/Metodo/ProyectoAML/test
 ```
-The other sets of the datasets are not requiered due to the code is made to do it by itself. It is possible to use the datasets HuggingFace library to load the dataset..
+The other sets of the datasets are not requiered due to the code is made to do it by itself. It is possible to use the datasets HuggingFace library to load the dataset.
 
 To acces to a image you have to use the following format "number.jpg" where the number correspond to the name of the image.
 
