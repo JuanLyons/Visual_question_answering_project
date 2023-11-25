@@ -384,7 +384,8 @@ elif args.train == False and args.mode == "test":
 
 
     #Cualitative results for the final method:
-
+    os.makedirs('wrong_high_confidence_images', exist_ok=True)
+    os.makedirs('wrong_low_confidence_images', exist_ok=True)
     #Get indices of instances where the model was wrong and the label is 0 (no)
     wrong_high_confidence_indices = np.where((all_predicted.round() != all_answers) & (all_answers == 0))
 
