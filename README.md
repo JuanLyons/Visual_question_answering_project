@@ -46,7 +46,7 @@ python main.py --train True
 ```
 
 ## Test
-
+There are two ways for testing the model. You can train it and then test it with the first command or you can use the weigths we show in the model weigths before. You do not have to specify the root, it is in the main.py.
 For testing the model you have trained you can run the following command:
 ```
 python main.py --bestmethod True --mode "test"
