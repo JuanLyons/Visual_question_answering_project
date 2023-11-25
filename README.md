@@ -46,8 +46,7 @@ python main.py --train True
 ```
 
 ## Test
-There are two ways for testing the model. You can train it and then test it with the first command or you can use the weigths we show in the model weigths before, with the second command, for this last way you do not have to specify the root, it is included in the main.py. The third, (Qualitresults) includes 10 images wih high score but incorrect predictions and 10 images with low scores and incorrect predictions. This file has the image names, scores and questions. The images themselves get saved in folders *wrong_high_confidence_images* and *wrong_low_confidence_images*.
-
+There are two ways for testing the model. You can train it and then test it with the first command or you can use the weigths we show in the model weigths before, with the second command, for this last way you do not have to specify the root, it is included in the main.py. 
 For testing the model you have trained you can run the following command:
 ```
 python main.py --bestmethod True --mode "test"
@@ -57,7 +56,8 @@ For testing the model with our weights you run the following command:
 ```
 python main.py --bestmethod True --mode "test" --pretrained True
 ```
-Both should reproduce our final method results reported in the paper. When running this code some Json files are created, the first (predictions) includes all predictions across the test set questions and their labels. The second (05_results) includes precision, recall and Fscore when using 0.5 as threshold (these are results reported in the paper). 
+Both should reproduce our final method results reported in the paper. When running this code some Json files are created, the first (predictions) includes all predictions across the test set questions and their labels. The second (05_results) includes precision, recall and Fscore when using 0.5 as threshold (these are results reported in the paper). The third, (Qualitresults) includes 10 images wih high score but incorrect predictions and 10 images with low scores and incorrect predictions. This file has the image names, scores and questions. The images themselves get saved in folders *wrong_high_confidence_images* and *wrong_low_confidence_images*.
+
 
 ## Demo
 
