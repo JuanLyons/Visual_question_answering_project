@@ -63,4 +63,35 @@ The demo could be tested by running this command:
 ```
 python main.py --mode 'demo' --img 'test/0.jpg'
 ```
-You can specify the image, by naming the set and the id of the image, and the demo will need you to input a question. Then the model is going to print the predicted answer.
+You can specify the image, by naming the set and the id of the image, and the demo will need you to input a question. Then the model is going to print the predicted answer. The demo only runs the pretrained best method with the weights in BCV002. We also have the test images of the PathVQA dataset in the following directory (in BCV002):
+
+```
+/home/nandradev/ProyectoAML/Metodo/ProyectoAML/test
+```
+Here are some examples for images and questions. For best results, we recommend using questions that belong to the PathVQA dataset:
+
+### Image 1
+
+```
+python main.py --mode 'demo' --img 'test/34.jpg'
+```
+Question:
+
+```
+'are the lipofuscin pigment granules also included?'
+```
+Output:
+```
+'The answer is no'
+```
+Question: 
+```
+'are areas of necrosis and inflammatory in filtrate also included?'
+```
+Output: 
+```
+'The answer is yes'
+```
+### Image 2
+
+### Image 3
