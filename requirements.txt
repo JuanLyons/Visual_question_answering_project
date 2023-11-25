@@ -2,3 +2,5 @@ datasets
 tqdm
 ftfy
 regex
+scikit-learn
+matplotlib
