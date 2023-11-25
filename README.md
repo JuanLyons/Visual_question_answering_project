@@ -8,17 +8,17 @@ The proposed method is a simple model that combines the strong feature map encod
 
 Python: 3.10.9
 
-Please install dependence package by run following command:
-
-```
-pip install -r requirements.txt
-```
-
 To install CLIP follow the next instructions:
 
 ```
 conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=12.1 -c pytorch -c nvidia
 pip install git+https://github.com/openai/CLIP.git
+```
+
+Please install dependence package by run following command:
+
+```
+pip install -r requirements.txt
 ```
 
 ## Dataset
