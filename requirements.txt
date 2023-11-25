@@ -4,3 +4,4 @@ ftfy
 regex
 scikit-learn
 matplotlib
+chardet
