@@ -75,7 +75,7 @@ Here are some examples for images and questions. For best results, we recommend 
 ```
 python main.py --mode 'demo' --img 'test/34.jpg'
 ```
-Question:
+Question 1:
 
 ```
 'are the lipofuscin pigment granules also included?'
@@ -84,7 +84,7 @@ Output:
 ```
 'The answer is no'
 ```
-Question: 
+Question 2: 
 ```
 'are areas of necrosis and inflammatory in filtrate also included?'
 ```
