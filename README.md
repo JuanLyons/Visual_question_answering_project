@@ -70,7 +70,30 @@ You can specify the image, by naming the set and the id of the image, and the de
 ```
 Here are some examples for images and questions. For best results, we recommend using questions that belong to the PathVQA dataset:
 
+
 ### Image 1
+```
+python main.py --mode 'demo' --img '/home/nandradev/ProyectoAML/Metodo/ProyectoAML/test/9.jpg'
+```
+Question 1:
+
+```
+'does the cortical bone forming the outer shell show concentric lamellae along with osteocytic lacunae surrounding central blood vessels, while the trabecular bone forming the marrow space shows trabeculae with osteoclastic activity at the margins?
+```
+Output:
+```
+'The answer is no'
+```
+Question 2: 
+```
+'does the trabecular bone forming the marrow space show trabeculae with osteoclastic activity at the margins?'
+```
+Output: 
+```
+'The answer is yes'
+```
+
+### Image 2
 
 ```
 python main.py --mode 'demo' --img '/home/nandradev/ProyectoAML/Metodo/ProyectoAML/test/34.jpg'
@@ -92,6 +115,5 @@ Output:
 ```
 'The answer is yes'
 ```
-### Image 2
 
-### Image 3
+
