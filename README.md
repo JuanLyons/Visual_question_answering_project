@@ -31,7 +31,7 @@ The other sets of the datasets are not required due to the code is made to do it
 
 To access an image you have to use the following format "number.jpg" where the number corresponds to the name of the image. Numbers in the test folder range from 0 to 3361.
 
-## Model weigths
+## Model weights
 
 The best model (final method) weights are in the following path in BCV002:
 ```
@@ -62,7 +62,7 @@ Both should reproduce our final method results reported in the paper.
 
 The demo could be tested by running this command:
 ```
-python main.py --mode 'demo' --img 'test/0.jpg'
+python main.py --mode 'demo' --img [IMAGE_PATH]
 ```
 You can specify the image, by naming the set and the id of the image, and the demo will need you to input a question. Then the model is going to print the predicted answer. The demo only runs the pretrained best method with the weights in BCV002. We also have the test images of the PathVQA dataset in the following directory (in BCV002):
 
