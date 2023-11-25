@@ -23,17 +23,17 @@ pip install git+https://github.com/openai/CLIP.git
 
 ## Dataset
 
-The test dataset is in the next path:
+The test dataset is in the next path in BCV002:
 ```
 /home/nandradev/ProyectoAML/Metodo/ProyectoAML/test
 ```
-The other sets of the datasets are not requiered due to the code is made to do it by itself. It can be used the datasets huggingface library to load the dataset.
+The other sets of the datasets are not requiered due to the code is made to do it by itself. It is possible to use the datasets HuggingFace library to load the dataset..
 
 To acces to a image you have to use the following format "number.jpg" where the number correspond to the name of the image.
 
 ## Model weigths
 
-The best model weigth are in the following path:
+The best model weigth are in the following path in BCV002:
 ```
 /home/nandradev/ProyectoAML/Metodo/ProyectoAML/CLIP_ViT-B32_concat_nl1_hd1024_BCELoss_w40.pth
 ```
