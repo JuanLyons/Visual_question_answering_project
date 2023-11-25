@@ -73,7 +73,7 @@ Here are some examples for images and questions. For best results, we recommend 
 ### Image 1
 
 ```
-python main.py --mode 'demo' --img 'test/34.jpg'
+python main.py --mode 'demo' --img '/home/nandradev/ProyectoAML/Metodo/ProyectoAML/test/34.jpg'
 ```
 Question 1:
 
